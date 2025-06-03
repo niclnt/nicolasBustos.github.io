@@ -13,3 +13,8 @@ function cambiamensaje(){
 document.getElementById("button").onclick=function(){
     cambiamensaje();
 };
+
+
+function toggleTema() {
+    document.body.classList.toggle('oscuro');
+}
