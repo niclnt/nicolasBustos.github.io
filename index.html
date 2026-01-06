@@ -4,157 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Nicolas Bustos</title>
-    <link rel="stylesheet" href="css/estilos.css"/>
+    <title>Nicolas Bustos | Ing. Sistemas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="nepic.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="icon" type="image/png" href="nepic.png">
 </head>
 <body>
     
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">NICLNT</a>
+                <a href="#">NICLNT<span class="punto">.</span></a>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobre-mi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> 
-                </ul>
-            </nav>
-            <div class="nav-responsiva">
+            
+            <div class="nav-responsiva" id="menu-icon">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </header><button onclick="toggleTema()" class="boton-tema">Cambiar tema</button>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">INICIO</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">SOBRE MÍ</a></li>
+                    <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+                    <li><a href="#contacto" class="nav-link">CONTACTO</a></li> 
+                </ul>
+            </nav>
+            
+            <button onclick="toggleTema()" class="boton-tema" title="Cambiar Tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
     </div>
-         <main>
-            
-            <section id="marcia" class="inicio">
 
-
-                <div class="banner">
-                    <img class="foto-perfil" src="nico3.jpg" alt="Foto de perfil"/>
-                <h1>Nicolas Bustos</h1>
-                <h2>Estudiante de Ingeniería en Sistemas de Información</h2>
-                <div class="redes">
-                  <a href="https://www.facebook.com/nicolasagustin.bustos"><i class="fa-brands fa-facebook"></i></a> 
-                  <!--  <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>-->
-                    <a href="https://www.instagram.com/nicolasbustos/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/nicolas-bustos-dev/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/niclnt"><i class="fa-brands fa-github"></i></a>
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="overlay"></div>
+            <div class="banner">
+                <div class="img-container">
+                    <img class="foto-perfil" src="nico3.jpg" alt="Nicolas Bustos"/>
                 </div>
-            </section>
-            
-            <section id="sobre-mi" class="sobremi">
-                    <div class="contenido-seccion">
-
-                        <h2>Sobre Mi</h2>
-                        <p><span> </span> Estudiante de 3er año de Ingeniería en Sistemas de Información. Tengo experiencia en soporte técnico y ventas de informática. Conocimientos en C, C++,Python, SQL, machine learning, desarrollo web y administración avanzada en Linux.</p>
-                    </div> 
-                        <div class="fila">
-                        
-                            <div class="columna">
-                                <h3>Datos Personales</h3>
-                                <ul>
-                                    <li>
-                                        <strong>Cumpleaños</strong>
-                                        27/12/1999
-                                    </li>
-
-                                    <li>
-                                        <strong>Telefono</strong>
-                                        1138251829
-                                    </li>
-
-                                    <li>
-                                        <strong>Email</strong>
-                                        nicolasbustosdev@gmail.com
-                                    </li>
-                                    
-                                     
-                                </ul>
-                            </div>
-
-                            <div class="columna">
-                                <h3>Intereses</h3>
-                                <div class="contenedor-intereses">
-                                    <div class="interes">
-                                        <i class="fa-solid fa-camera"></i>
-                                        <span>FOTOGRAFIA</span>
-                                    </div>
-
-                                    <div class="interes">
-                                        <i class="fa-solid fa-car"></i>
-                                        <span>AUTOS</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                       
-
-            </section>
-
-            <section id="proyectos" class="proyectos">
+                <h1>Nicolas Bustos</h1>
+                <h2>Ingeniería en Sistemas de Información</h2>
+                <p class="tagline">Desarrollador Web | Data Science Enthusiast | Linux Admin</p>
                 
-                <h2>Proyectos realizados</h2>
-                    <div class="lista_proyectos">
-                        <div class="detalles_proyectos">
-                            <img alt="Diseño De Escritorio, Escritorios, Salas De Estudio En Casa, Habitación Gamer, Proyectos De Casa, Oficina En Casa, Casas, Decoración De Habitaciones, Oficinas" class="hCL kVc L4E MIw" elementtiming="closeupImage" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/originals/eb/a5/c2/eba5c2d653be435b17d120c3ee9bf70a.jpg">
-                            <h3>Proyecto 1</h3>
-                            <p> Este es un proyecto en python de cuando estudié para ser data scientist</p>
-                            <a href="https://github.com/niclnt?tab=repositories">Enlace al Proyecto</a>
-                        </div>
-
-                        <div class="detalles_proyectos">
-                            <img src="https://global-uploads.webflow.com/634f8a681508d6180f9a2128/636b7099b520df5b145d34f3_20-Best-Practices-for-Successful-Software-Development-Projects-Invensis.jpeg">
-                            <h3>Proyecto Elentech</h3>
-                            <p>Este proyecto está incompleto, pero es una pagina web que pienso utilizar una vez pueda formar correctamente mi empresa</p>
-                            <a href="https://github.com/niclnt/ElenTech">Enlace al Proyecto</a>
-                        </div>
-
-                        <div class="detalles_proyectos">
-                            <img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/t/a/table_of_contents_for_software_development_project_plan_slide01.jpg" title="Table Of Contents For Software Development Project Plan Slide01" alt="Table Of Contents For Software Development Project Plan Slide01" >
-                            <h3>Proyectos C++</h3>
-                            <p>Aquí se puede encontrar mi proyecto en lenguaje C++ que he realizado para algoritmos y estructuras de datos, he hecho muchos mas proyectos pero los perdí previamente a usar github</p>
-                            <a href="https://github.com/niclnt/Cpp">Enlace al Proyecto</a>
-                        </div>
-                    </div>
-            </section>
-
-            <section id="contacto" class="contacto">
-                <h2>Contactame</h2>
-                <form>
-                    <div>
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Escribe tu nombre">
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/nicolas-bustos-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/niclnt" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/nicolasbustos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="#proyectos" class="btn-primary">Ver Mis Trabajos</a>
+            </div>
+        </section>
+        
+        <section id="sobre-mi" class="sobremi seccion-oscura">
+            <div class="contenido-seccion">
+                <h2 class="titulo-seccion">Sobre Mí</h2>
+                <div class="fila-perfil">
+                    <div class="columna-bio">
+                        <p>
+                            Hola, soy Nicolas. Actualmente curso el <strong>3er año de Ingeniería en Sistemas</strong>. 
+                            Me apasiona la tecnología y cómo esta puede resolver problemas complejos. 
+                            Tengo un perfil híbrido con experiencia en soporte técnico, pero mi foco actual está en el 
+                            desarrollo de software y la administración de sistemas.
+                        </p>
+                        <p>
+                            Siempre estoy buscando aprender nuevas tecnologías, desde optimización de algoritmos en C++ 
+                            hasta despliegue de modelos de Machine Learning.
+                        </p>
                         
+                        <div class="skills">
+                            <h3>Tech Stack</h3>
+                            <div class="skill-tags">
+                                <span>Python</span><span>C</span><span>C++</span><span>SQL</span>
+                                <span>Linux</span><span>HTML/CSS</span><span>JS</span>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label>Asunto </label>
-                        <input type="text" placeholder="Escribe Asunto">
+
+                    <div class="columna-datos">
+                        <h3>Información Personal</h3>
+                        <ul>
+                            <li><strong>Email:</strong> nicolasbustosdev@gmail.com</li>
+                            <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
+                            <li><strong>Edad:</strong> 26 Años</li>
+                            <li><strong>Disponibilidad:</strong> Freelance / Full-time</li>
+                        </ul>
                         
+                        <div class="intereses">
+                            <h3>Intereses</h3>
+                            <div class="iconos-interes">
+                                <div class="tip" title="Fotografía"><i class="fa-solid fa-camera"></i></div>
+                                <div class="tip" title="Automovilismo"><i class="fa-solid fa-car"></i></div>
+                                <div class="tip" title="Gaming"><i class="fa-solid fa-gamepad"></i></div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label>Mensaje</label>
-                        <button id="button" class="mensaje" onclick="cambiamensaje()">Enviar</button>
-                        <textarea></textarea>
-                    </div>
-                   
-                </form>
-            </section>
-         </main>
+                </div>
+            </div> 
+        </section>
+
+        <section id="proyectos" class="proyectos">
+            <div class="contenido-seccion">
+                <h2 class="titulo-seccion">Proyectos Destacados</h2>
+                <div class="galeria-proyectos">
+                    
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="alert.png" alt="App SCP">
+                        </div>
+                        <div class="info-proyecto">
+                            <h3>App SCP (En Desarrollo)</h3>
+                            <p>Aplicación de escritorio que controla procesos en ejecucion de clientes conectador a un servidor, actualmente en fase de construcción ALPHA.</p>
+                            <div class="links-proyecto">
+                                <a href="https://niclnt.github.io/SCP/" target="_blank" class="btn-outline">Ver Demo Online <i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Código C++">
+                        </div>
+                        <div class="info-proyecto">
+                            <h3>Proyectos Universitarios (SSDL)</h3>
+                            <p>Repositorio central de trabajos prácticos y laboratorios académicos. Enfoque en sintaxis, semántica y estructuras de datos.</p>
+                            <div class="links-proyecto">
+                                <a href="https://github.com/niclnt/ProyectosSSDL" target="_blank" class="btn-outline">Ver Repositorio <i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Data Science">
+                        </div>
+                        <div class="info-proyecto">
+                            <h3>Data Science con Python</h3>
+                            <p>Proyectos de análisis exploratorio y modelos predictivos (Machine Learning) desarrollados con Python, Pandas y Scikit-learn.</p>
+                            <div class="links-proyecto">
+                                <a href="https://github.com/niclnt?tab=repositories" target="_blank" class="btn-outline">Ver Código <i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto seccion-oscura">
+            <div class="contenido-seccion">
+                <h2 class="titulo-seccion">Contáctame</h2>
+                <div class="contenedor-form">
+                    <form id="contactForm" onsubmit="event.preventDefault(); cambiamensaje();">
+                        <div class="input-group">
+                            <input type="text" id="nombre" required>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="mensaje" rows="5" required></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
     
-         <script src="funciones.js"></script>
-</body>
-</html>
-    
-         <script src="funciones.js"></script>
+    <footer>
+        <p>&copy; 2024 Nicolas Bustos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="funciones.js"></script>
 </body>
 </html>
